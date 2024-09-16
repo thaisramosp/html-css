@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title> 
+</head>
+<body>
+    <h1>Criando um hiperlink</h1>
+    <p>
+        Parra criar um hiperlink, devemos criar âncoras através da tag &lt;a&gt;. O principal atributo dessa <em>tag</em> é o href, que cria uma referência hipertexto.
+    </p>
+    <h2>links externos</h2>
+    <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf">Acesse o primeiro vídeo da aula 10 do Gustavo Guanabara!! </a>
+    <p>
+        Dentro do atributo href, o que colocamos foi uma url completa para outro site.
+    </p>
+    <p>
+        Outro atributo bem útil da tag de âncora é o <em>hreflang</em>, que permite indicar qual é o idioma principal do site para onde o link está desviando.
+    </p>
+    <a href="https://www.w3schools.com/" hreflang="en">Visite o site da W3Schools!!
+    </a> 
+    <p>
+        Para poder controlar onde o site vai abrir, podemos usar o atributo <em>target</em>, que suporta os seguintes valores:
+    </p>
+    <ul type="square">
+        <li>_blank: abre o link em uma nova janela em branco</li>
+        <li>_self: abre o link na janela ou frame atual</li>
+        <li>_top: desfaz todos os frames e abre o destino no navegador completo</li>
+        <li>_parent: similar ao uso do _top em uma referência à janela </li>
+        <li>nome-do-frame: caso esteja usando frames, indicar o nome da janela a abrir</li>
+    </ul>
+    <p>
+        Outro recurso bem interessante para links é indicar qual é a natureza do destino usando o atributo <em>rel</em>, que suporta os seguintes valores:
+    </p>
+    <ul type="square">
+        <li>next: indica que o link é para a próxima parte do documento atual</li>
+        <li>prev: indica que o link é para a parte anterior do documento atual</li>
+        <li>external: indica que é um kink para outro site que não faz parte do site atual</li>
+        <li>author: indica que é um link para o site do autor do artigo atual</li>
+        <li>nofollow: indica que é um link para umb site não endossado, como um link pago</li>
+    </ul>
+    <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/" hreflang="pt-br" rel="external" target="_blank">Video aula 10 curso HTML e CSS do Gustavo Guanabara!! </a>
+    <h2>Links internos</h2>
+    <p>
+        Existem duas formas de links internos: os que esão na mesma pasta ou em pastas diferentes.
+        Um exemplo de um link na mesma pasta:
+    </p>
+    <a href="pag002.html" rel="next" hreflang="pt-br" target="_self">Vá para a segunda parte deste site clicando aqui!</a>
+    <p>
+        A segunda forma de encontrar um link é quando ele está em outra pasta do arquivo:
+    </p>
+    <a href="site3/pag.html" target="_self" hreflang="pt-br" rel="next">Para acessar a terceira parte da página, clique aqui.</a>
+    <h2>Downloads</h2>
+    <p>
+        Livro de lógica de programação e algoritmos disponível para download em pdf. <br>
+<a href="livro/Estruturas de dados e algoritmos com JavaScript (Loiane Groner) .pdf" download="livro/Estruturas de dados e algoritmos com JavaScript (Loiane Groner) .pdf" type="application/pdf"> Baixe aqui.</a>
+    </p>
+    <p>Para fazer o download do livro compactado,<a href="livro/Estruturas de dados e algoritmos com JavaScript (Loiane Groner) .pdf.zip" download="livro/Estruturas de dados e algoritmos com JavaScript (Loiane Groner) .pdf.zip" type="application/zip">cique aqui.</a></p>
+    
+    
+    
+    
+
+    
+    
+
+
+
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    
+    
+    
+</body>
+</html>
